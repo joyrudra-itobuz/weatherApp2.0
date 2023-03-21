@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+/* font-family: "Poppins", sans-serif;
+font-family: "Raleway", sans-serif;
+font-family: "Roboto Mono", monospace;
+font-family: "Work Sans", sans-serif; */
+
+:root {
+  --color-primary: white;
+  --color-secondary: rgb(26, 26, 26);
+  --color-heading: rgb(0, 130, 130);
+  --color-heading-secondary: purple;
+  --transiton-hover-duration: all 0.5s;
+  --box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.422);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body h1 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+body h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.main-section nav input:focus-visible {
+  outline: none;
+}
+
+.main-section {
+  background-image: url("../images/body/bg-sm.svg");
+  border-bottom-left-radius: 7rem;
+  border-bottom-right-radius: 7rem;
+  border-right: 2px solid rgb(144, 201, 255);
+  border-left: 2px solid rgb(144, 201, 255);
+  border-bottom: 15px solid rgb(0, 64, 176);
+  box-shadow: 0.1rem 0.1rem 6rem 0.5rem #0066ffa6;
+}
+
+.temp-here::after {
+  color: rgb(170, 213, 255);
+  content: "o";
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 1rem;
+}
+.feels-like::after {
+  color: rgb(170, 213, 255);
+  content: "o";
+  font-size: 0.5rem;
+  position: absolute;
+}
+
+.today-temp-card {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  border-radius: 5rem;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 70vw;
+  z-index: 99;
+  /* box-shadow: 0.1rem 0.1rem 0.5rem 10rem rgba(0, 0, 0, 0.43); */
+}
+
+.menu-container li {
+  transition: all 0.2s;
+}
+.menu-container li:hover {
+  color: white;
+}
+
+.today-temp::after {
+  content: "o";
+  /* margin-bottom: 10rem; */
+  position: relative;
+  top: -1rem;
+  font-size: 1rem;
+}
+
+.menu-closing-animation {
+  animation-name: menu-closing-animation;
+  animation-duration: 0.5s;
+}
+
+.menu-bg-shadow {
+  box-shadow: 0.1rem 0.1rem 0.5rem 10rem rgba(0, 0, 0, 0.695);
+}
+
+@keyframes menu-closing-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+.menu-showing-animation {
+  animation-name: menu-showing-animation;
+  animation-duration: 0.5s;
+}
+
+@keyframes menu-showing-animation {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.today-temp-card {
+  transition: all 0.5s;
+}
+.today-temp-card:hover {
+  background-color: rgb(0, 94, 255);
+  border-radius: 1rem;
+}
