@@ -54,8 +54,6 @@ const getWeatherIcon = (condition) => {
   condition = condition.toString();
   const conditionLowerCase = condition.toLowerCase();
 
-  console.log(document.querySelector(".sun-cloud-icon"));
-
   if (condition === "Overcast") {
     let weatherIcon = document.querySelector(".overcast-icon");
     weatherIcon.classList.toggle("hidden");
@@ -124,3 +122,7 @@ setInterval(() => {
   date = date.toString();
   dateArea.innerHTML = date.substring(0, 24);
 }, 1000);
+
+(async () => {
+  getWeatherData();
+})();
