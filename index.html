@@ -16,9 +16,9 @@
           ><img src="./assets/images/nav/menu.svg" alt=""
         /></a>
         <input
-          class="text-center bg-transparent text-white text-[30px]"
+          class="text-center bg-transparent text-white text-[30px] user-location-input"
           type="text"
-          value="Delhi"
+          value="Kolkata"
         />
         <a class="cursor-pointer"
           ><img src="./assets/images/nav/menu-vertical.svg" alt=""
@@ -38,17 +38,54 @@
         ><a href=""> <li>Contact</li> </a
         ><a href=""> <li>Help</li> </a>
       </ul>
-      <div class="flex justify-center">
+      <div class="flex justify-center overflow-scroll">
         <img
-          class="w-40"
-          src="./assets/images/weather-icons/raining.svg"
+          class="w-40 hidden overcast-icon weather-icon"
+          src="./assets/images/weather-icons/purple-overcast.svg"
+          alt=""
+        />
+        <img
+          class="w-40 hidden rain-icon weather-icon"
+          src="./assets/images/weather-icons/purple-rain.svg"
+          alt=""
+        />
+        <img
+          class="w-40 hidden sun-cloud-icon weather-icon"
+          src="./assets/images/weather-icons/purple-sun-cloud.svg"
+          alt=""
+        />
+        <img
+          class="w-40 hidden sunny-icon weather-icon"
+          src="./assets/images/weather-icons/purple-sun.svg"
+          alt=""
+        />
+        <img
+          class="w-40 hidden thunder-icon weather-icon"
+          src="./assets/images/weather-icons/purple-thunder.svg"
+          alt=""
+        />
+        <img
+          class="w-40 thunderstorm-icon weather-icon current-weather-icon"
+          src="./assets/images/weather-icons/purple-thinder-rain.svg"
+          alt=""
+        />
+        <img
+          class="w-40 hidden cloud-rain-icon weather-icon"
+          src="./assets/images/weather-icons/purple-cloud-rain.svg"
+          alt=""
+        />
+        <img
+          class="w-40 hidden cloudy-icon weather-icon"
+          src="./assets/images/weather-icons/purple-couldy.svg"
           alt=""
         />
       </div>
       <div class="flex flex-col items-center">
         <h2 class="temp-here text-white text-[115px] mt-[-2rem]">21</h2>
-        <p class="text-white text-2xl mt-[-2rem]">Thunderstrorm</p>
-        <p class="text-blue-800">Monday, 17th June</p>
+        <p class="text-white text-2xl mt-[-2rem] weather-condition">
+          Thunderstrorm
+        </p>
+        <p class="text-blue-800 date-here">Monday, 17th June</p>
       </div>
       <div
         class="flex justify-between mx-10 mt-5 py-5 border-t-[2px] border-t-blue-300 border-opacity-25"
@@ -59,7 +96,7 @@
             src="./assets/images/weather-icons/wind.svg"
             alt=""
           />
-          <p class="text-white">13 km/h</p>
+          <p class="text-white wind-here">13 km/h</p>
           <p class="text-blue-900">Wind</p>
         </div>
         <div class="flex flex-col items-center">
@@ -68,7 +105,7 @@
             src="./assets/images/weather-icons/thermometer.svg"
             alt=""
           />
-          <p class="text-white feels-like">70</p>
+          <p class="text-white feels-like feels-like-here">70</p>
           <p class="text-blue-900">Feels Like</p>
         </div>
         <div class="flex flex-col items-center">
@@ -77,7 +114,7 @@
             src="./assets/images/weather-icons/humidity.png"
             alt=""
           />
-          <p class="text-white">65%</p>
+          <p class="text-white humidity-here">65%</p>
           <p class="text-blue-900">Humidity</p>
         </div>
       </div>
@@ -85,7 +122,12 @@
     <section class="">
       <div class="flex justify-between px-5">
         <h3 class="text-start text-3xl text-white">Today</h3>
-        <p class="text-white my-auto text-2xl text-opacity-30">7 days ></p>
+        <a
+          href="#"
+          target="_blank"
+          class="text-white my-auto text-2xl text-opacity-30"
+          >7 days ></a
+        >
       </div>
       <div class="flex justify-between gap-10 mx-5 mt-6 overflow-scroll">
         <div
@@ -134,6 +176,7 @@
         </div>
       </div>
     </section>
+    <script src="./js/weatherOperartions.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
