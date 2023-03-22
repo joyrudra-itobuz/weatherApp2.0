@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <title>Contact</title>
+  </head>
+  <body class="text-white">
+    <header>
+      <nav class="flex justify-between py-2">
+        <a onclick="showMenu()" menu-btn class="cursor-pointer"
+          ><img src="./assets/images/nav/menu.svg" alt=""
+        /></a>
+        <h1 class="text-4xl underline text-blue-400">Contact Me</h1>
+        <a class="cursor-pointer"
+          ><img src="./assets/images/nav/menu-vertical.svg" alt=""
+        /></a>
+      </nav>
+      <ul
+        class="hidden px-10 menu-container flex flex-col items-start gap-10 text-2xl text-blue-900 bg-blue-300 py-10 menu-closing-animation"
+      >
+        <div class="flex justify-between w-[100%]">
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <button class="menu-close" onclick="closeMenu()">
+            <img class="w-8" src="./assets/images/nav/cross.svg" alt="" />
+          </button>
+        </div>
+        <a href=""> <li>Location</li> </a>
+        <a href=""> <li>Api</li> </a
+        ><a href=""> <li>Contact</li> </a
+        ><a href=""> <li>Help</li> </a>
+      </ul>
+    </header>
+    <section class="text-xl p-5">
+      <p>
+        Hi Myself, Joyrudra Biswas, I'm very happy that you visited my page.
+        <br />
+        <br />
+        If you wish to contact me, please fill the form and I'll get in touch
+        with you!
+        <br />
+      </p>
+    </section>
+    <section
+      class="text-xl contact-form flex flex-col items-center mb-20 border-2 mx-5 rounded-xl pb-10"
+    >
+      <div class="flex gap-5 my-10">
+        <p>Name :</p>
+        <input type="text" class="user-name" />
+      </div>
+      <div class="flex gap-5 my-10">
+        <p>Email :</p>
+        <input type="email" class="user-email" />
+      </div>
+      <div class="flex gap-5 my-10">
+        <p>Message :</p>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="1"
+          class="w-52 bg-transparent border-b-2 user-message"
+        ></textarea>
+      </div>
+      <button class="px-5 border-2 border-white rounded-lg contact-submit-btn">
+        Submit
+      </button>
+    </section>
+    <section class="icons-container flex gap-10 justify-center mb-5">
+      <a href="https://www.behance.net/joyrudrabisaws/"
+        ><img src="./assets/images/contact-me/behance.svg" alt="" /></a
+      ><a href="https://github.com/gen-dead-X"
+        ><img src="./assets/images/contact-me/github.svg" alt="" /></a
+      ><a href="https://instagram.com/its_all_about_joy"
+        ><img src="./assets/images/contact-me/instagram.svg" alt="" /></a
+      ><a href="https://in.linkedin.com/in/joyrudra-biswas-b27899191"
+        ><img src="./assets/images/contact-me/linkedin.svg" alt="" /></a
+      ><a href="https://twitter.com/ItsallboutJoy"
+        ><img src="./assets/images/contact-me/twitter.svg" alt=""
+      /></a>
+    </section>
+    <footer>
+      <p class="block text-center">
+        Have a <span class="text-green-400"> Great Day </span> Ahead :) !
+      </p>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/contactUs.js"></script>
+  </body>
+</html>

@@ -46,6 +46,11 @@ const getWeatherData = () => {
       humidity.innerHTML = response.current.humidity + "%";
     })
     .catch((err) => {
+      userInputLocation.value = "Please Enter a Valid Location";
+      setTimeout(() => {
+        userInputLocation.value = "Kolkata";
+        getWeatherData();
+      }, 5000);
       console.log(err);
     });
 };
